@@ -71,8 +71,13 @@ body {
 
 main {
   display: flex;
+  justify-content: center;
   padding: 3rem 3%;
   flex: 1;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -141,11 +146,10 @@ header {
 }
 
 #cards-container {
-  align-self: center;
-  justify-self: center;
   width: 95%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -171,6 +175,11 @@ header {
   cursor: pointer;
   transform: translateY(-0.13rem);
   box-shadow: 1px 3px 0.4rem rgba(30, 27, 75, 0.17);
+}
+
+.review-card:active {
+  transform: translateY(0);
+  box-shadow: 1px 3px 0.2rem rgba(30, 27, 75, 0.15);
 }
 
 .review-card>img {
