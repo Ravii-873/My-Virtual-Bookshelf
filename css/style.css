@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --indigo-900: #1e1b4b;
+  --indigo-700: #3730a3;
+  --indigo-600: #4338ca;
+  --indigo-500: #4f46e5;
+  --indigo-400: #6366f1;
+  --indigo-200: #c7d2fe;
+  --indigo-100: #e0e7ff;
+  --indigo-50: #f3f2ff;
+
+  --slate-950: #020617;
+  --slate-900: #0f172a;
+  --slate-800: #1e293b;
+  --slate-700: #334155;
+  --slate-600: #475569;
+  --slate-500: #64748b;
+  --slate-400: #94a3b8;
+  --slate-300: #cbd5e1;
+  --slate-200: #e2e8f0;
+  --slate-100: #f1f5f9;
+  --slate-50: #f8fafc;
+
+  --gray-1: #fbfcfe;
+  --gray-2: #f8f9fd;
+  --gray-3: #edf0f6;
+  --gray-4: #e4e8f0;
+  --gray-5: #dce1eb;
+  --gray-6: #d4dae5;
+  --gray-7: #c8cfdd;
+  --gray-8: #b3bcce;
+  --gray-9: #858ea0;
+  --gray-10: #7b8494;
+  --gray-11: #5e6572;
+  --gray-11-3: #c7c7cc;
+  --gray-11-6: #dadade;
+  --gray-12: #1c202a;
+
+  --gray-a1: #0040c004;
+  --gray-a2: #0025b707;
+  --gray-a3: #002b8012;
+  --gray-a4: #0026721b;
+  --gray-a5: #00256e23;
+  --gray-a6: #0124652b;
+  --gray-a7: #00216237;
+  --gray-a8: #001f5b4c;
+  --gray-a9: #0113397a;
+  --gray-a10: #00123184;
+  --gray-a11: #000b20a1;
+  --gray-a12: #000510e3;
+
+  --montserrat: "Montserrat", sans-serif;
+  --roboto: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  background-color: var(--slate-50);
+  color: var(--slate-900);
+  font-family: var(--roboto);
+}
+
+main {
+  display: flex;
+  padding: 3rem 3%;
+  flex: 1;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 0 10%;
+  background-color: var(--indigo-500);
+  box-shadow: 0 2px 12px rgb(79 70 229 30);
+}
+
+#logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#logo-title img {
+  height: 50px;
+  border-radius: 0.5rem;
+}
+
+#logo-title h1 {
+  color: white;
+  font-family: var(--montserrat);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+#add-review {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(30, 27, 75, 0.25);
+  color: var(--indigo-600);
+  font-family: var(--montserrat);
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+#add-review:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(30, 27, 75, 0.3);
+}
+
+#add-review:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(30, 27, 75, 0.25);
+}
+
+#add-review:focus-visible {
+  outline: 3px solid var(--indigo-200);
+  outline-offset: 3px;
+}
+
+#cards-container {
+  align-self: center;
+  justify-self: center;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.review-card {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-bottom: 1.6rem;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--indigo-200);
+  border-radius: 1rem;
+  box-shadow: 1px 3px 0.2rem rgba(30, 27, 75, 0.15);
+  overflow: hidden;
+}
+
+.review-card>img {
+  width: 300px;
+  height: auto;
+}
+
+.book-info {
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-info h2 {
+  color: var(--indigo-700);
+  font-family: var(--montserrat);
+  font-size: 1.6rem;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
+
+
+footer {
+  padding: 2rem 10%;
+  border-top: 1px solid var(--indigo-200);
+  background-color: var(--indigo-50);
+  color: var(--slate-600);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  list-style: none;
+}
+
+footer li:first-child {
+  color: var(--indigo-700);
+  font-family: var(--montserrat);
+  font-weight: 600;
+}
+
+footer a {
+  color: var(--indigo-600);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+
+footer a:hover {
+  color: var(--indigo-900);
+  text-decoration: underline;
+}
+
+
+
+@media (max-width: 600px) {
+  header,
+  footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #logo-title h1 {
+    font-size: 1.1rem;
+  }
+}
