@@ -90,7 +90,7 @@ header {
   height: 5rem;
   padding: 0 10%;
   background-color: var(--indigo-500);
-  box-shadow: 0 2px 12px rgb(79 70 229 30);
+  box-shadow: 0 2px 12px rgba(79, 70, 229, 0.3);
 }
 
 #logo-title {
@@ -150,10 +150,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-content: flex-start;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
+/* .details-review-card, */
 .review-card {
   max-width: 300px;
   flex-shrink: 0;
@@ -162,11 +164,12 @@ header {
   gap: 1.1rem;
   padding-bottom: 1.6rem;
   width: fit-content;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border: 1px solid var(--indigo-200);
   border-radius: 1rem;
   box-shadow: 1px 3px 0.2rem rgba(30, 27, 75, 0.15);
+  background-color: white;
   overflow: hidden;
   transition: all 0.1s ease-in-out;
 }
@@ -182,6 +185,7 @@ header {
   box-shadow: 1px 3px 0.2rem rgba(30, 27, 75, 0.15);
 }
 
+/* .details-review-card>img, */
 .review-card>img {
   width: 100%;
   height: auto;
@@ -260,6 +264,24 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* .details-container {
+  width: 80%;
+  padding: 3%;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 1px 3px 0.2rem rgba(30, 27, 75, 0.15);
+}
+
+.details-review-card {
+  max-width: 300px;
+  height: 100%;
+  width: fit-content;
+  border: none;
+}
+
+.details-review-card>img {
+  width: 20cqw;
+} */
 
 
 @media (max-width: 600px) {
