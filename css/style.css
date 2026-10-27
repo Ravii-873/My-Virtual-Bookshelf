@@ -309,6 +309,10 @@ footer a:hover {
   text-align: center;
 }
 
+.details-review-card .book-rating p {
+  font-size: 1rem;
+}
+
 .review {
   display: flex;
   flex-direction: column;
