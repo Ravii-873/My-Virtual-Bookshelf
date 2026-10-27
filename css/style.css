@@ -579,3 +579,10 @@ select option {
     gap: 0;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none;
+    animation: none;
+  }
+}
