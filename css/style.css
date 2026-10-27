@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
+  --indigo-950: #0f0e27;
   --indigo-900: #1e1b4b;
+  --indigo-800: #2d2a76;
   --indigo-700: #3730a3;
   --indigo-600: #4338ca;
   --indigo-500: #4f46e5;
   --indigo-400: #6366f1;
+  --indigo-300: #818cf8;
   --indigo-200: #c7d2fe;
   --indigo-100: #e0e7ff;
   --indigo-50: #f3f2ff;
+  --indigo-10: #f9f9ff;
 
   --slate-950: #020617;
   --slate-900: #0f172a;
@@ -343,6 +347,127 @@ footer a:hover {
   cursor: not-allowed;
   transform: none;
 }
+
+/* .form-page-container {
+  width: 60%;
+  max-width: 800px;
+  margin: 60px auto;
+}
+
+.form-page-container h2 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  font-family: var(--montserrat);
+  color: var(--indigo-700);
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.review-form {
+  padding: 33px 61px 42px;
+  background-color: var(--gray-a2);
+  border-radius: 12px;
+  box-shadow: 1px 3px 0.2rem rgba(30, 27, 75, 0.2);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+  color: var(--indigo-700);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--indigo-100);
+  background-color: white;
+  color: var(--gray-10);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+:focus {
+  outline: none;
+}
+
+.form-group input::placeholder,
+.form-group select option {
+  font-size: 16px;
+  color: var(--input-text);
+}
+
+@supports (appearance: base-select) {
+
+  select,
+  select::picker(select) {
+    appearance: base-select;
+  }
+
+  select::picker(select) {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  select option {
+    padding: 8px 12px;
+  }
+
+  select option:checked {
+    background-color: #2b2d4210;
+  }
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+#watched-date {
+  display: block;
+}
+
+.form-group-textarea {
+  height: 177px;
+}
+
+.form-group-textarea textarea {
+  height: 143px;
+  padding-top: 15px;
+}
+
+.form-group-textarea textarea::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--input-text);
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 20px;
+  color: white;
+  background-color: var(--header-bg);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+} */
 
 
 @media (max-width: 48rem) {
