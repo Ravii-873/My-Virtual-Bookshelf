@@ -112,7 +112,8 @@ header {
   letter-spacing: -0.01em;
 }
 
-#add-review {
+#add-review,
+#add-review-form {
   display: grid;
   place-items: center;
   width: 3rem;
@@ -333,6 +334,16 @@ footer a:hover {
   font-size: 2rem;
   font-weight: 900;
 }
+
+
+#add-review-form {
+  background-color: var(--gray-3);
+  color: var(--gray-9);
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
 
 @media (max-width: 48rem) {
   .details-container {
