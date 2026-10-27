@@ -339,7 +339,6 @@ footer a:hover {
   font-weight: 900;
 }
 
-
 #add-review-form {
   background-color: var(--gray-3);
   color: var(--gray-9);
@@ -348,25 +347,40 @@ footer a:hover {
   transform: none;
 }
 
-/* .form-page-container {
+.form-page-container {
   width: 60%;
   max-width: 800px;
   margin: 60px auto;
 }
 
+.form-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+
 .form-page-container h2 {
   text-align: center;
-  margin-bottom: 1.25rem;
   font-family: var(--montserrat);
   color: var(--indigo-700);
   font-size: 2.8rem;
   font-weight: 500;
 }
 
+.form-page-container h3 {
+  text-align: center;
+  font-family: var(--roboto);
+  color: var(--gray-9);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 .review-form {
   padding: 33px 61px 42px;
   background-color: var(--gray-a2);
-  border-radius: 12px;
+  border-radius: 0.75rem;
   box-shadow: 1px 3px 0.2rem rgba(30, 27, 75, 0.2);
 }
 
@@ -387,14 +401,14 @@ footer a:hover {
 .form-group select,
 .form-group textarea {
   width: 100%;
-  padding: 12px;
+  padding: 0.75rem;
   display: flex;
   align-items: center;
-  font-size: 14px;
-  border-radius: 12px;
+  font-size: 1rem;
+  border-radius: 0.75rem;
   border: 1px solid var(--indigo-100);
   background-color: white;
-  color: var(--gray-10);
+  color: var(--indigo-950);
   white-space: nowrap;
   overflow: hidden;
 }
@@ -403,10 +417,12 @@ footer a:hover {
   outline: none;
 }
 
-.form-group input::placeholder,
-.form-group select option {
-  font-size: 16px;
-  color: var(--input-text);
+.form-group input::placeholder {
+  color: var(--gray-10);
+}
+
+select option {
+  color: var(--indigo-700);
 }
 
 @supports (appearance: base-select) {
@@ -417,8 +433,8 @@ footer a:hover {
   }
 
   select::picker(select) {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: white;
+    border: 1px solid var(--indigo-200);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
@@ -428,7 +444,7 @@ footer a:hover {
   }
 
   select option:checked {
-    background-color: #2b2d4210;
+    background-color: var(--indigo-50);
   }
 }
 
@@ -438,39 +454,60 @@ footer a:hover {
   width: 100%;
 }
 
-#watched-date {
+#date-of-reading {
   display: block;
 }
 
 .form-group-textarea {
-  height: 177px;
+  height: 11rem;
 }
 
 .form-group-textarea textarea {
-  height: 143px;
-  padding-top: 15px;
+  height: 9rem;
+  padding-top: 1rem;
+  font-family: var(--roboto);
 }
 
 .form-group-textarea textarea::placeholder {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--roboto);
   font-size: 16px;
-  color: var(--input-text);
+  color: var(--gray-10);
 }
 
 .submit-button {
   width: 100%;
-  margin-top: 10px;
-  padding: 12px;
-  font-size: 20px;
+  margin-top: 0.625rem;
+  padding: 0.75rem;
+  font-size: 1.25rem;
   color: white;
-  background-color: var(--header-bg);
+  background-color: var(--indigo-500);
   border: none;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   cursor: pointer;
-} */
+}
 
+.submit-button:hover,
+.submit-button:focus,
+.submit-button:active {
+  background-color: var(--indigo-600);
+}
 
-@media (max-width: 48rem) {
+.submit-button:active {
+  transform: translateY(1px);
+}
+
+@media screen and (max-width: 768px) {
+
+  header,
+  footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #logo-title h1 {
+    font-size: 1.1rem;
+  }
+
   .details-container {
     grid-template-columns: 1fr;
   }
@@ -496,17 +533,31 @@ footer a:hover {
   .review-paragraphs p::first-letter {
     font-size: 1.7rem;
   }
-}
 
-@media (max-width: 600px) {
-
-  header,
-  footer {
-    padding-left: 5%;
-    padding-right: 5%;
+  .form-page-container {
+    width: 90%;
+    margin: 40px 0;
+    padding: 0;
   }
 
-  #logo-title h1 {
-    font-size: 1.1rem;
+  .form-page-container h2 {
+    font-size: 30px;
+  }
+
+  .form-page-container h3 {
+    font-size: 0.9rem;
+  }
+
+  .review-form {
+    padding: 30px 25px;
+  }
+
+  .form-group label {
+    font-size: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0px;
   }
 }
