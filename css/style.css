@@ -118,8 +118,9 @@ header {
 
 #add-review,
 #add-review-form {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 3rem;
   height: 3rem;
   color: var(--indigo-600);
@@ -272,8 +273,7 @@ footer a:hover {
 }
 
 .details-container {
-  display: grid;
-  grid-template-columns: clamp(18rem, 40%, 30rem) 1fr;
+  display: flex;
   align-self: flex-start;
   gap: 3rem;
   width: 100%;
@@ -285,9 +285,10 @@ footer a:hover {
 }
 
 .details-review-card {
-  align-self: start;
-  width: 100%;
-  max-width: none;
+  flex: 0 0 40%;
+  align-self: flex-start;
+  min-width: 18rem;
+  max-width: 30rem;
   border: none;
 }
 
@@ -315,6 +316,7 @@ footer a:hover {
 
 .review {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 1.25rem;
   min-width: 0;
@@ -512,12 +514,14 @@ select option {
   }
 
   .details-container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   .details-review-card {
-    justify-self: center;
+    flex: none;
+    align-self: center;
     width: 100%;
+    min-width: 0;
     max-width: 20rem;
   }
 
@@ -527,6 +531,10 @@ select option {
 
   .details-review-card h3 {
     font-size: 1.2rem;
+  }
+
+  .review {
+    flex: none;
   }
 
   .review-paragraphs p {
