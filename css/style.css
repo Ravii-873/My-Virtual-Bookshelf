@@ -419,10 +419,6 @@ footer a:hover {
   border-radius: 0.75rem;
 }
 
-:focus {
-  outline: none;
-}
-
 .form-group input::placeholder {
   color: var(--gray-10);
 }
