@@ -20,7 +20,60 @@
   </header>
 
   <main>
-    
+    <div class="form-page-container">
+      <div class="form-titles">
+        <h2>New Review</h2>
+        <h3>This review won't be saved or processed anywhere</h3>
+      </div>
+
+      <form class="review-form" method="GET" action="">
+        <div class="form-group">
+          <label for="book-title">Book Title</label>
+          <input required type="text" id="book-title" name="book_title" placeholder="Enter the book title">
+        </div>
+        
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" name="author" placeholder="Enter the book author">
+        </div>
+        
+        <div class="form-group">
+          <label for="genre">Genre</label>
+          <input type="text" id="genre" name="genre" placeholder="Enter the book genre">
+        </div>
+
+        <div class="form-group">
+          <label for="cover-url">Cover URL</label>
+          <input type="url" id="cover-url" name="cover_url" placeholder="Paste image URL (jpg or png)">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="rating-select">Stars</label>
+            <select required id="rating-select" name="rating">
+              <option value="">Choose a rating</option>
+              <option value="1">★☆☆☆☆ - 1 Star</option>
+              <option value="2">★★☆☆☆ - 2 Stars</option>
+              <option value="3">★★★☆☆ - 3 Stars</option>
+              <option value="4">★★★★☆ - 4 Stars</option>
+              <option value="5">★★★★★ - 5 Stars</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date-of-reading">Date of Reading</label>
+            <input type="date" id="date-of-reading" name="date_of_reading">
+          </div>
+        </div>
+
+        <div class="form-group-textarea form-group">
+          <label for="review-text">My Review</label>
+          <textarea required id="review-text" name="review_text" rows="5" placeholder="Write your thoughts here..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">Add</button>
+      </form>
+    </div>
   </main>
 
   <footer>
