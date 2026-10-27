@@ -101,6 +101,13 @@ header {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  padding: 0.3rem 1.3rem;
+  border-radius: 1000rem;
+  transition: all 0.07s ease-in-out;
+}
+
+#logo-title:hover {
+  box-shadow: 0 0 0.5rem rgba(30, 27, 75, 0.25);
 }
 
 #logo-title img {
